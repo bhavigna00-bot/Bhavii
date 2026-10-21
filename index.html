@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Bhavigna | Portfolio</title>
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://jsdelivr.net" rel="stylesheet">
     <!-- Custom CSS Link -->
@@ -12,9 +12,9 @@
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100">
 
     <!-- 1. Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">MyPortfolio</a>
+            <a class="navbar-brand fw-bold tracking-wide text-uppercase" href="#home">Bhavigna</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,16 +32,19 @@
     </nav>
 
     <!-- 2. Home Section -->
-    <section id="home" class="bg-dark text-light text-center text-sm-start">
+    <section id="home" class="hero-section text-light text-center text-sm-start">
         <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1>Hi, I am <span class="text-warning">John Doe</span></h1>
-                    <p class="lead my-4">A passionate Full-Stack Developer dedicated to building scalable, user-friendly web applications that solve real-world problems.</p>
-                    <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
+            <div class="d-sm-flex align-items-center justify-content-between py-5">
+                <div class="header-text-block">
+                    <p class="text-uppercase tracking-wider text-accent mb-2">Welcome to my space</p>
+                    <h1 class="display-4 fw-bold">Hi, I am <span class="text-accent">BHAVIGNA</span></h1>
+                    <p class="lead my-4 text-secondary-light">A passionate Full-Stack Developer dedicated to building scalable, user-focused web systems and elegant architectures.</p>
+                    <a href="#contact" class="btn btn-accent btn-lg px-4 py-2 mt-2">Get In Touch</a>
                 </div>
                 <!-- Profile Picture Placeholder -->
-                <img class="img-fluid d-none d-sm-block profile-img ms-4" src="https://placeholder.com" alt="Profile Picture">
+                <div class="profile-img-container mt-4 mt-sm-0">
+                    <img class="img-fluid profile-img shadow-lg" src="https://placeholder.com" alt="Bhavigna's Profile Picture">
+                </div>
             </div>
         </div>
     </section>
@@ -50,21 +53,23 @@
     <section id="about" class="bg-light-custom">
         <div class="container">
             <div class="text-center mb-5">
-                <h2>About Me</h2>
-                <hr class="w-25 mx-auto">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-line"></div>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-8">
-                    <h4>Career Objective</h4>
-                    <p class="text-muted">
-                        To secure a challenging position in a reputable organization where I can utilize my technical skills in web development, contribute to impactful projects, and continuously grow as a professional software engineer.
-                    </p>
-                    <h4 class="mt-4">Personal Details</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-transparent"><strong>Location:</strong> New York, USA</li>
-                        <li class="list-group-item bg-transparent"><strong>Email:</strong> johndoe@example.com</li>
-                        <li class="list-group-item bg-transparent"><strong>Languages:</strong> English, Spanish</li>
-                    </ul>
+                    <div class="card border-0 p-4 shadow-sm custom-card">
+                        <h4>Career Objective</h4>
+                        <p class="text-muted leading-relaxed">
+                            To secure a challenging position in a progressive organization where I can leverage my modern web development skills, contribute to foundational systems architecture, and continuously scale my capabilities as a professional engineer.
+                        </p>
+                        <h4 class="mt-4">Personal Details</h4>
+                        <ul class="list-group list-group-flush mt-2">
+                            <li class="list-group-item bg-transparent px-0"><strong>Location:</strong> India</li>
+                            <li class="list-group-item bg-transparent px-0"><strong>Email:</strong> bhavigna@example.com</li>
+                            <li class="list-group-item bg-transparent px-0"><strong>Core Focus:</strong> Responsive UI, Frontend Optimization, API Architectures</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,27 +79,27 @@
     <section id="education">
         <div class="container">
             <div class="text-center mb-5">
-                <h2>Education</h2>
-                <hr class="w-25 mx-auto">
+                <h2 class="section-title">Education</h2>
+                <div class="title-line"></div>
             </div>
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">2021 - 2025</span>
-                            <h5 class="card-title">Bachelor of Science in Computer Science</h5>
-                            <p class="card-text text-muted mb-1">State University</p>
-                            <p class="card-text"><small class="text-muted">GPA: 3.8/4.0</small></p>
+                    <div class="card h-100 border-0 shadow-sm custom-card">
+                        <div class="card-body p-4">
+                            <span class="badge bg-dark-custom mb-3 px-3 py-2">2021 - 2025</span>
+                            <h5 class="card-title fw-bold">Bachelor of Science in Computer Science</h5>
+                            <p class="card-text text-muted mb-1">State Technical University</p>
+                            <p class="card-text"><small class="text-accent-dark fw-semibold">GPA: 3.8 / 4.0</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">2019 - 2021</span>
-                            <h5 class="card-title">High School Diploma</h5>
-                            <p class="card-text text-muted mb-1">Apex Higher Secondary School</p>
-                            <p class="card-text"><small class="text-muted">Grade: A+</small></p>
+                    <div class="card h-100 border-0 shadow-sm custom-card">
+                        <div class="card-body p-4">
+                            <span class="badge bg-dark-custom mb-3 px-3 py-2">2019 - 2021</span>
+                            <h5 class="card-title fw-bold">High School Diploma</h5>
+                            <p class="card-text text-muted mb-1">Apex Academy</p>
+                            <p class="card-text"><small class="text-accent-dark fw-semibold">Grade: A+</small></p>
                         </div>
                     </div>
                 </div>
@@ -106,33 +111,33 @@
     <section id="skills" class="bg-light-custom">
         <div class="container">
             <div class="text-center mb-5">
-                <h2>Technical Skills</h2>
-                <hr class="w-25 mx-auto">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="title-line"></div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <label class="form-label fw-bold">HTML5 & CSS3</label>
-                    <div class="progress mb-3" style="height: 20px;">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            <div class="row g-4 p-4 card border-0 shadow-sm custom-card flex-row mx-auto w-100 max-w-custom">
+                <div class="col-md-6 pe-md-4">
+                    <label class="form-label fw-bold text-dark">HTML5 & CSS3</label>
+                    <div class="progress mb-4 custom-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
                     </div>
                     
-                    <label class="form-label fw-bold">JavaScript</label>
-                    <div class="progress mb-3" style="height: 20px;">
-                        <div class="progress-bar bg-info text-dark" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    <label class="form-label fw-bold text-dark">JavaScript (ES6+)</label>
+                    <div class="progress mb-4 custom-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">88%</div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <label class="form-label fw-bold">Bootstrap 5</label>
-                    <div class="progress mb-3" style="height: 20px;">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                <div class="col-md-6 ps-md-4">
+                    <label class="form-label fw-bold text-dark">Bootstrap 5 & Responsive Design</label>
+                    <div class="progress mb-4 custom-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
                     </div>
 
-                    <label class="form-label fw-bold">Other Frameworks & Tools</label>
-                    <div>
-                        <span class="badge bg-secondary p-2 me-1 mb-2">Git / GitHub</span>
-                        <span class="badge bg-secondary p-2 me-1 mb-2">React.js</span>
-                        <span class="badge bg-secondary p-2 me-1 mb-2">Node.js</span>
-                        <span class="badge bg-secondary p-2 me-1 mb-2">MySQL</span>
+                    <label class="form-label fw-bold text-dark mb-2 d-block">Other Frameworks & Tools</label>
+                    <div class="pt-1">
+                        <span class="badge custom-badge me-2 mb-2">Git & GitHub</span>
+                        <span class="badge custom-badge me-2 mb-2">React.js</span>
+                        <span class="badge custom-badge me-2 mb-2">Node.js</span>
+                        <span class="badge custom-badge me-2 mb-2">SQL / NoSQL</span>
                     </div>
                 </div>
             </div>
@@ -143,52 +148,27 @@
     <section id="projects">
         <div class="container">
             <div class="text-center mb-5">
-                <h2>Projects</h2>
-                <hr class="w-25 mx-auto">
+                <h2 class="section-title">Projects</h2>
+                <div class="title-line"></div>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://placeholder.com" class="card-img-top project-img" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Commerce Platform</h5>
-                            <p class="card-text text-muted">A full-featured shopping cart system built with HTML, CSS, JavaScript, and Bootstrap elements.</p>
+                    <div class="card h-100 border-0 shadow-sm custom-card project-card">
+                        <img src="https://placeholder.com" class="card-img-top project-img" alt="E-Commerce Project">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">E-Commerce Platform</h5>
+                            <p class="card-text text-muted">A production-ready store structure featuring reactive item additions, layout structures, and intuitive dynamic modules.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://placeholder.com" class="card-img-top project-img" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Task Management App</h5>
-                            <p class="card-text text-muted">A dynamic Kanban-style to-do application highlighting complex JavaScript DOM manipulation.</p>
+                    <div class="card h-100 border-0 shadow-sm custom-card project-card">
+                        <img src="https://placeholder.com" class="card-img-top project-img" alt="Task Management Project">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Task Management System</h5>
+                            <p class="card-text text-muted">A modular assignment layout allowing real-time scheduling updates with client performance configurations.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://placeholder.com" class="card-img-top project-img" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Weather Dashboard</h5>
-                            <p class="card-text text-muted">A sleek interactive responsive layout fetching third-party live REST API weather forecasts.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. Contact Section -->
-    <section id="contact" class="bg-light-custom">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2>Contact Me</h2>
-                <hr class="w-25 mx-auto">
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-
-
+                    <div class="card h-100 border-0 shadow-sm custom-card project-card">
